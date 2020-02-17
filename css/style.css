@@ -1,0 +1,134 @@
+@import "nav.css";
+@import "footer.css";
+@import "responsive.css";
+@import "single.css";
+
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    transition: 0.2s;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* news background image */
+
+.big-bg {
+    background: url('https://images.unsplash.com/photo-1476242906366-d8eb64c2f661?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1608&q=80') no-repeat fixed center center/cover;
+    height: 750px;
+}
+
+.transparent-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    position: relative;
+
+}
+
+.news-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.arrow {
+    font-size: 2rem;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: move 1.5s forwards;
+}
+
+
+@keyframes move {
+    0% {
+        top: 88%;
+    }
+
+    100% {
+        top: 93%;
+    }
+
+
+}
+
+
+
+.latest {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+/* articles section */
+
+.card {
+    width: 100% !important;
+}
+
+.card-img-top {
+    height: 210px;
+    object-fit: cover;
+}
+
+.more-button {
+    background-color: #D65DB1;
+    color: white;
+}
+
+/* Second Section */
+
+.podcast-big-bg {
+    background: url('https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat fixed center center/cover;
+    height: 600px;
+}
+
+.podcast-transparent-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    position: relative;
+
+}
+
+.podcast-bg-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.podcast-heading {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+.podcast-image {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.podcast-image img {
+    width: 100%;
+}
+
+.podcast-body {
+    padding: 0 200px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #2d767f;
+    font-size: 1.1rem;
+}
